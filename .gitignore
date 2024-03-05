@@ -1,0 +1,11 @@
+.*
+build
+obj_dir
+*.o
+*.d
+*.a
+*.txt
+main
+makefile-example/rubbler
+makefile-example/rubbler.h
+compile_commands.json
