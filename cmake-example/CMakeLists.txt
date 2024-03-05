@@ -19,6 +19,6 @@ ExternalProject_Add(
 set(RUBBLER_LIB ${CMAKE_BINARY_DIR}/rubbler/target/release/librubbler.a)
 
 add_executable(main main.cpp)
-target_include_directories(main PRIVATE ${CMAKE_BINARY_DIR}/rubbler)
+target_include_directories(main PRIVATE ${CMAKE_BINARY_DIR}/rubbler/target)
 target_link_libraries(main PRIVATE ${RUBBLER_LIB})
 verilate(main SOURCES top.sv)

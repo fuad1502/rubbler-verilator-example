@@ -19,7 +19,7 @@ obj_dir/Vtop__ALL.a obj_dir/Vtop.h: top.sv
 
 rubbler.h librubbler.a: rubbler
 	cd rubbler && cargo build --release
-	cp rubbler/rubbler.h rubbler/target/release/librubbler.a .
+	cp rubbler/target/rubbler.h rubbler/target/release/librubbler.a .
 
 rubbler:
 	git clone https://github.com/fuad1502/rubbler.git
